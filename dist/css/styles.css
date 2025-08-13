@@ -786,6 +786,12 @@ a {
     margin: -43px 0px 20px 10px;
   }
 }
+@media (max-width: 374px) {
+  .block-packages__column.red .item-packages__pic3 {
+    margin: -43px 0px 0px 0px;
+    height: 250px;
+  }
+}
 .block-packages__pic1 {
   position: absolute;
   top: -50px;
@@ -1550,7 +1556,7 @@ a {
     display: block;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 374px) {
   .block-reviews__image-mob {
     width: 100%;
     height: auto;
@@ -2144,7 +2150,7 @@ a {
   margin: 0px 0px 40px 0px;
 }
 .block-benefits__title span {
-  font-family: var(--third-family);
+  font-family: var(--font3);
   font-weight: 700;
   font-size: 52px;
   line-height: 123%;

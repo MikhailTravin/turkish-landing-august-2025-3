@@ -443,6 +443,10 @@
                 @media (max-width: 992px) {
                     margin: -43px 0px 20px 10px;
                 }
+                @media (max-width: 374px) {
+                    margin: -43px 0px 0px 0px;
+                    height: 250px;
+                }
             }
         }
     }
@@ -1074,7 +1078,7 @@
         @media (max-width: 992px) {
             display: block;
         }
-        @media (max-width: 400px) {
+        @media (max-width: 374px) {
             width: 100%;
             height: auto;
         }
@@ -1551,7 +1555,7 @@
         text-align: center;
         margin: 0px 0px 40px 0px;
         span {
-            font-family: var(--third-family);
+            font-family: var(--font3);
             font-weight: 700;
             font-size: 52px;
             line-height: 123%;
@@ -1587,8 +1591,8 @@
         padding: 38px 34px 30px 41px;
         height: 100%;
         min-height: 238px;
-        @media (max-width: 768px){
-              padding: 50px 20px 40px 25px;
+        @media (max-width: 768px) {
+            padding: 50px 20px 40px 25px;
         }
         p {
             font-weight: 400;
