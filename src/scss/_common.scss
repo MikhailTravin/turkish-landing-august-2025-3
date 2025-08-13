@@ -1,0 +1,85 @@
+body {
+  color: var(--theme-color-text-common);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  background: #fafafa;
+  .lock & {
+    overflow: hidden;
+  }
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+fieldset,
+fieldset legend {
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  outline: none;
+  color: currentcolor;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e6514a;
+  border-radius: 30px;
+  min-height: 55px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 125%;
+  text-align: center;
+  color: #fff;
+  padding: 5px 10px;
+  transition: opacity 0.3s;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.title2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 125%;
+  text-align: center;
+  margin: 0px 0px 40px 0px;
+  span {
+    font-family: "SegoePrint", sans-serif;
+    font-weight: 700;
+    color: var(--theme-color-accent);
+  }
+  @media (max-width: 768px) {
+    font-size: 36px;
+    margin: 0px 0px 20px 0px;
+  }
+  @media (max-width: 480px) {
+    font-size: 32px;
+  }
+}
+
+.title3 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 122%;
+  text-align: center;
+  @media (max-width: 768px) {
+    font-size: 28px;
+    line-height: 129%;
+  }
+}
