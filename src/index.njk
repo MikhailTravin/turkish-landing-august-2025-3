@@ -53,7 +53,7 @@
 						<img src="img/bg-mob.webp" alt="" class="block-intro__bg-mob">
 						<img src="img/image21.webp" alt="" class="block-intro__pic2-mob">
 						<img src="img/image1.webp" alt="" class="block-intro__pic1-mob">
-						<a href="#" class="btn">Выбрать обучение</a>
+						<a href="#" class="btn" data-popup="#popup1">Выбрать обучение</a>
 					</div>
 				</div>
 			</div>
@@ -140,7 +140,7 @@
 										</div>
 									</div>
 								</div>
-								<a href="#" class="btn">Забрать пакет!</a>
+								<a href="#" class="btn" data-popup="#popup2">Забрать пакет!</a>
 							</div>
 						</div>
 						<div class="block-packages__column">
@@ -229,7 +229,7 @@
 										</div>
 									</div>
 								</div>
-								<a href="#" class="btn">Забрать пакет!</a>
+								<a href="#" class="btn" data-popup="#popup3">Забрать пакет!</a>
 							</div>
 						</div>
 						<div class="block-packages__column red">
@@ -343,7 +343,7 @@
 										</div>
 									</div>
 								</div>
-								<a href="#" class="btn">Забрать пакет!</a>
+								<a href="#" class="btn" data-popup="#popup4">Забрать пакет!</a>
 							</div>
 						</div>
 					</div>
@@ -749,6 +749,247 @@
 
 		</main>
 		{% include 'blocks/footer.njk' %}
+	</div>
+	<div id="popup1" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div data-close class="popup__close">
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M15.4813 13.1402C13.7764 11.4098 12.0715 9.70492 10.3665 8C12.0715 6.29508 13.7764 4.59016 15.5067 2.85979C17.0335 1.33299 14.667 -1.03354 13.1402 0.493255C11.4098 2.22362 9.70492 3.92855 8 5.63347C6.29508 3.92855 4.59016 2.22362 2.85979 0.518702C1.33299 -1.00809 -1.03354 1.35844 0.493255 2.88523C2.22362 4.59016 3.92855 6.29508 5.63347 8C3.92855 9.70492 2.22362 11.4098 0.518702 13.1402C-1.00809 14.667 1.35844 17.0335 2.88523 15.5067C4.59016 13.7764 6.29508 12.0715 8 10.3665C9.70492 12.0715 11.4098 13.7764 13.1402 15.5067C14.6416 17.0081 17.0081 14.6416 15.4813 13.1402Z"
+							fill="#23283B" />
+					</svg>
+				</div>
+				<div class="popup__body">
+					<div class="popup__left left-popup">
+						<img loading="lazy" src="img/bg-mob.webp" alt="" class="left-popup__bg">
+						<img loading="lazy" src="img/image1.webp" alt="" class="left-popup__pic">
+					</div>
+					<form action="#" class="popup__right right-popup">
+						<div class="right-popup__titles">
+							<div class="right-popup__title">Подача заявки</div>
+							<div class="right-popup__subtitle">Оставьте свои контактные данные и наш менеджер свяжется с
+								Вами в ближайшее время</div>
+						</div>
+						<div class="right-popup__inputs">
+							<div class="right-popup__input">
+								<label for="name">Ваше имя и фамилия</label>
+								<input id="name" autocomplete="off" type="text" name="form[]"
+									data-error="Обязательное поле" placeholder="Ваше имя и фамилия">
+							</div>
+							<div class="right-popup__input">
+								<label for="tel">Ваш телефон/whatsapp</label>
+								<input data-required id="tel" autocomplete="off" type="text" name="form[]"
+									data-error="Обязательное поле" placeholder="Телефон/Whatsapp">
+							</div>
+							<div class="right-popup__input">
+								<label for="email">Ваш e-mail</label>
+								<input data-required id="email" autocomplete="off" type="text" name="form[]"
+									data-error="Обязательное поле" placeholder="E-mail">
+							</div>
+						</div>
+						<div class="checkbox">
+							<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+								name="form[]">
+							<label for="c_1" class="checkbox__label">
+								<span class="checkbox__icon"></span>
+								<span class="checkbox__text">Соглашаюсь на обработку моих персональных данных в
+									соответствии с <a href="#">условиями</a>, а также соглашаюсь с
+									<a href="#">договором-офертой</a></span>
+							</label>
+						</div>
+						<button type="submit" class="btn">Подать заявку</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="popup2" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div data-close class="popup__close">
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M15.4813 13.1402C13.7764 11.4098 12.0715 9.70492 10.3665 8C12.0715 6.29508 13.7764 4.59016 15.5067 2.85979C17.0335 1.33299 14.667 -1.03354 13.1402 0.493255C11.4098 2.22362 9.70492 3.92855 8 5.63347C6.29508 3.92855 4.59016 2.22362 2.85979 0.518702C1.33299 -1.00809 -1.03354 1.35844 0.493255 2.88523C2.22362 4.59016 3.92855 6.29508 5.63347 8C3.92855 9.70492 2.22362 11.4098 0.518702 13.1402C-1.00809 14.667 1.35844 17.0335 2.88523 15.5067C4.59016 13.7764 6.29508 12.0715 8 10.3665C9.70492 12.0715 11.4098 13.7764 13.1402 15.5067C14.6416 17.0081 17.0081 14.6416 15.4813 13.1402Z"
+							fill="#23283B" />
+					</svg>
+				</div>
+				<div class="popup__body">
+					<div class="popup__left left-popup">
+						<div class="left-popup__titles">
+							<div class="left-popup__title">
+								Пакет<br> «База Турецкого языка»
+							</div>
+							<div class="left-popup__subtitle">
+								12 600 руб.
+							</div>
+						</div>
+						<img loading="lazy" src="img/image8.webp" alt="">
+					</div>
+					<form action="#" class="popup__right right-popup">
+						<div class="right-popup__titles">
+							<div class="right-popup__title">Подача заявки</div>
+							<div class="right-popup__subtitle">Оставьте свои контактные данные и наш менеджер свяжется с
+								Вами в ближайшее время</div>
+							<div class="right-popup__price">12 600 руб.</div>
+						</div>
+						<div class="right-popup__inputs">
+							<div class="right-popup__input">
+								<label for="name">Ваше имя и фамилия</label>
+								<input id="name" autocomplete="off" type="text" name="form[]"
+									data-error="Обязательное поле" placeholder="Ваше имя и фамилия">
+							</div>
+							<div class="right-popup__input">
+								<label for="tel">Ваш телефон/whatsapp</label>
+								<input data-required id="tel" autocomplete="off" type="text" name="form[]"
+									data-error="Обязательное поле" placeholder="Телефон/Whatsapp">
+							</div>
+							<div class="right-popup__input">
+								<label for="email">Ваш e-mail</label>
+								<input data-required id="email" autocomplete="off" type="text" name="form[]"
+									data-error="Обязательное поле" placeholder="E-mail">
+							</div>
+						</div>
+						<div class="checkbox">
+							<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+								name="form[]">
+							<label for="c_1" class="checkbox__label">
+								<span class="checkbox__icon"></span>
+								<span class="checkbox__text">Соглашаюсь на обработку моих персональных данных в
+									соответствии с <a href="#">условиями</a>, а также соглашаюсь с
+									<a href="#">договором-офертой</a></span>
+							</label>
+						</div>
+						<button type="submit" class="btn">Подать заявку</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="popup3" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div data-close class="popup__close">
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M15.4813 13.1402C13.7764 11.4098 12.0715 9.70492 10.3665 8C12.0715 6.29508 13.7764 4.59016 15.5067 2.85979C17.0335 1.33299 14.667 -1.03354 13.1402 0.493255C11.4098 2.22362 9.70492 3.92855 8 5.63347C6.29508 3.92855 4.59016 2.22362 2.85979 0.518702C1.33299 -1.00809 -1.03354 1.35844 0.493255 2.88523C2.22362 4.59016 3.92855 6.29508 5.63347 8C3.92855 9.70492 2.22362 11.4098 0.518702 13.1402C-1.00809 14.667 1.35844 17.0335 2.88523 15.5067C4.59016 13.7764 6.29508 12.0715 8 10.3665C9.70492 12.0715 11.4098 13.7764 13.1402 15.5067C14.6416 17.0081 17.0081 14.6416 15.4813 13.1402Z"
+							fill="#23283B" />
+					</svg>
+				</div>
+				<div class="popup__body">
+					<div class="popup__left left-popup">
+						<div class="left-popup__titles">
+							<div class="left-popup__title">
+								Пакет<br> «Комплексный Турецкий»
+							</div>
+							<div class="left-popup__subtitle">
+								15 400 руб.
+							</div>
+						</div>
+						<img loading="lazy" src="img/image10.webp" alt="">
+					</div>
+					<form action="#" class="popup__right right-popup">
+						<div class="right-popup__titles">
+							<div class="right-popup__title">Подача заявки</div>
+							<div class="right-popup__subtitle">Оставьте свои контактные данные и наш менеджер свяжется с
+								Вами в ближайшее время</div>
+							<div class="right-popup__price">15 400 руб.</div>
+						</div>
+						<div class="right-popup__inputs">
+							<div class="right-popup__input">
+								<label for="name">Ваше имя и фамилия</label>
+								<input id="name" autocomplete="off" type="text" name="form[]"
+									data-error="Обязательное поле" placeholder="Ваше имя и фамилия">
+							</div>
+							<div class="right-popup__input">
+								<label for="tel">Ваш телефон/whatsapp</label>
+								<input data-required id="tel" autocomplete="off" type="text" name="form[]"
+									data-error="Обязательное поле" placeholder="Телефон/Whatsapp">
+							</div>
+							<div class="right-popup__input">
+								<label for="email">Ваш e-mail</label>
+								<input data-required id="email" autocomplete="off" type="text" name="form[]"
+									data-error="Обязательное поле" placeholder="E-mail">
+							</div>
+						</div>
+						<div class="checkbox">
+							<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+								name="form[]">
+							<label for="c_1" class="checkbox__label">
+								<span class="checkbox__icon"></span>
+								<span class="checkbox__text">Соглашаюсь на обработку моих персональных данных в
+									соответствии с <a href="#">условиями</a>, а также соглашаюсь с
+									<a href="#">договором-офертой</a></span>
+							</label>
+						</div>
+						<button type="submit" class="btn">Подать заявку</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="popup4" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div data-close class="popup__close">
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M15.4813 13.1402C13.7764 11.4098 12.0715 9.70492 10.3665 8C12.0715 6.29508 13.7764 4.59016 15.5067 2.85979C17.0335 1.33299 14.667 -1.03354 13.1402 0.493255C11.4098 2.22362 9.70492 3.92855 8 5.63347C6.29508 3.92855 4.59016 2.22362 2.85979 0.518702C1.33299 -1.00809 -1.03354 1.35844 0.493255 2.88523C2.22362 4.59016 3.92855 6.29508 5.63347 8C3.92855 9.70492 2.22362 11.4098 0.518702 13.1402C-1.00809 14.667 1.35844 17.0335 2.88523 15.5067C4.59016 13.7764 6.29508 12.0715 8 10.3665C9.70492 12.0715 11.4098 13.7764 13.1402 15.5067C14.6416 17.0081 17.0081 14.6416 15.4813 13.1402Z"
+							fill="#23283B" />
+					</svg>
+				</div>
+				<div class="popup__body">
+					<div class="popup__left left-popup">
+						<div class="left-popup__titles">
+							<div class="left-popup__title">
+								Пакет<br>
+								«Турецкий: все включено»
+							</div>
+							<div class="left-popup__subtitle">
+								19 900 руб.
+							</div>
+						</div>
+						<img loading="lazy" src="img/image25.webp" alt="">
+					</div>
+					<form action="#" class="popup__right right-popup">
+						<div class="right-popup__titles">
+							<div class="right-popup__title">Подача заявки</div>
+							<div class="right-popup__subtitle">Оставьте свои контактные данные и наш менеджер свяжется с
+								Вами в ближайшее время</div>
+							<div class="right-popup__price">19 900 руб.</div>
+						</div>
+						<div class="right-popup__inputs">
+							<div class="right-popup__input">
+								<label for="name">Ваше имя и фамилия</label>
+								<input id="name" autocomplete="off" type="text" name="form[]"
+									data-error="Обязательное поле" placeholder="Ваше имя и фамилия">
+							</div>
+							<div class="right-popup__input">
+								<label for="tel">Ваш телефон/whatsapp</label>
+								<input data-required id="tel" autocomplete="off" type="text" name="form[]"
+									data-error="Обязательное поле" placeholder="Телефон/Whatsapp">
+							</div>
+							<div class="right-popup__input">
+								<label for="email">Ваш e-mail</label>
+								<input data-required id="email" autocomplete="off" type="text" name="form[]"
+									data-error="Обязательное поле" placeholder="E-mail">
+							</div>
+						</div>
+						<div class="checkbox">
+							<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+								name="form[]">
+							<label for="c_1" class="checkbox__label">
+								<span class="checkbox__icon"></span>
+								<span class="checkbox__text">Соглашаюсь на обработку моих персональных данных в
+									соответствии с <a href="#">условиями</a>, а также соглашаюсь с
+									<a href="#">договором-офертой</a></span>
+							</label>
+						</div>
+						<button type="submit" class="btn">Подать заявку</button>
+					</form>
+				</div>
+			</div>
+		</div>
 	</div>
 	{% include 'blocks/scripts.njk' %}
 </body>
